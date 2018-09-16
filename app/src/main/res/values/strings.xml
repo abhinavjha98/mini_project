@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">mini_app</string>
+    <string name="academics">Academics</string>
+    <string name="tracking">Tracking</string>
+    <string name="health">Health</string>
+    <string name="stress">Stress</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>

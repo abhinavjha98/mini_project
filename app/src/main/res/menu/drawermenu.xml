@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/db"
+    android:title="Dashboard"
+    android:icon="@drawable/ic_baseline_dashboard_24px"/>
+    <item android:id="@+id/acad"
+        android:title="@string/academics"
+        android:icon="@drawable/ic_baseline_assessment_24px"/>
+    <item android:id="@+id/tra"
+    android:title="@string/tracking"
+        android:icon="@drawable/ic_baseline_track_changes_24px"/>
+    <item android:id="@+id/heal"
+        android:title="@string/health"
+        android:icon="@drawable/ic_baseline_favorite_24px"/>
+    <item android:id="@+id/str"
+        android:title="@string/stress"
+        android:icon="@drawable/ic_baseline_work_24px"/>
+
+</menu>
