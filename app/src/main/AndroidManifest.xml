@@ -21,6 +21,12 @@
         <activity android:name=".Register">
 
         </activity>
+        <activity android:name=".Home_screen"></activity>
+        <activity android:name=".academics"></activity>
+        <activity android:name=".health"></activity>
+        <activity android:name=".stress"></activity>
+        <activity android:name=".tracking"></activity>
+
     </application>
 
 </manifest>

@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(MainActivity.this,"Succesfully Logged in",Toast.LENGTH_LONG).show();
+                            Intent i = new Intent(MainActivity.this,Home_screen.class);
+                            startActivity(i);
                         }
                         else{
                             Toast.makeText(MainActivity.this,"Please check your email Id or password",Toast.LENGTH_LONG).show();
