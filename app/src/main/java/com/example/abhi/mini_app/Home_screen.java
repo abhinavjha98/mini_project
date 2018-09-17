@@ -50,7 +50,7 @@ public class Home_screen extends MainActivity{
         he.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Home_screen.this,health.class);
+                Intent i = new Intent(Home_screen.this,health_camera.class);
                 startActivity(i);
             }
         });

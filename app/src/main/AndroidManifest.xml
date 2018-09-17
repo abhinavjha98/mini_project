@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.abhi.mini_app">
 <uses-permission android:name="android.permission.INTERNET">
-
 </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA">
+
+    </uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +28,10 @@
         <activity android:name=".health"></activity>
         <activity android:name=".stress"></activity>
         <activity android:name=".tracking"></activity>
-
+        <activity android:name=".Graph"></activity>
+        <activity android:name=".health_camera"></activity>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocs"/>
     </application>
 
 </manifest>
