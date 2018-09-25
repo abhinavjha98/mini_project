@@ -38,7 +38,7 @@
         android:text="Login" />
 
     <Button
-        android:id="@+id/regi"
+        android:id="@+id/regsi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

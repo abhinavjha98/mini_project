@@ -27,7 +27,7 @@
                 android:src="@drawable/ic_directions_bike_black_24dp"/>
 
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/subject_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -38,7 +38,7 @@
                 android:hint="Enter your name"
                 android:textColorHint="#fff"
                 android:maxLines="1"
-                android:drawableLeft="@drawable/ic_person_white_24dp"
+
                 android:layout_marginTop="70dp"/>
 
             <View
@@ -46,7 +46,24 @@
                 android:layout_height="1dp"
                 android:background="#f9d7db" />
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/subject_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Enter your EmaiID"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <EditText
+                android:id="@+id/subject_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -59,16 +76,16 @@
                 android:background="@android:color/transparent"
                 android:layout_marginTop="4dp"
 
-                android:drawableLeft="@drawable/ic_person_white_24dp"/>
+                />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#f9d7db" />
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/subject_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="numberDecimal"
                 android:ems="10"
                 android:drawablePadding="12dp"
                 android:padding="8dp"
@@ -76,9 +93,7 @@
                 android:textColorHint="#fff"
                 android:maxLines="1"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="4dp"
-
-                android:drawableLeft="@drawable/ic_lock_white_24dp"/>
+                android:layout_marginTop="4dp" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -88,7 +103,7 @@
                 android:layout_height="1dp"
                 android:background="#f9d7db" />
             <EditText
-                android:id="@+id/phone"
+                android:id="@+id/subject_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -99,16 +114,14 @@
                 android:textColorHint="#fff"
                 android:maxLines="1"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="4dp"
-
-                android:drawableLeft="@drawable/ic_call_black_24dp"/>
+                android:layout_marginTop="4dp" />
 
             <Button
-                android:id="@+id/Register"
+                android:id="@+id/retrieve_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_signup"
-                android:text="Register"
+                android:text="Next"
                 style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textColor="#fff"
                 android:textAllCaps="false"
@@ -116,14 +129,7 @@
                 android:layout_marginTop="16dp"
                 android:clickable="true"
                 android:padding="16dp"/>
-            <ProgressBar
-                android:id="@+id/progressBar2"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignTop="@+id/Register"
-                android:layout_marginEnd="69dp" />
+
         </LinearLayout>
     </ScrollView>
 

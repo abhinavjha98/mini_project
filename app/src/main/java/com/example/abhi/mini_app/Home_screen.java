@@ -29,7 +29,7 @@ public class Home_screen extends MainActivity{
         ac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Home_screen.this,Graph.class);
+                Intent i = new Intent(Home_screen.this,academics_1.class);
                 startActivity(i);
             }
         });
