@@ -30,30 +30,67 @@
                 android:id="@+id/subject_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+                android:inputType="none"
+                android:editable="false"
                 android:ems="10"
                 android:background="@android:color/transparent"
                 android:drawablePadding="12dp"
                 android:padding="8dp"
-                android:hint="Enter your name"
+                android:hint=""
                 android:textColorHint="#fff"
                 android:maxLines="1"
 
-                android:layout_marginTop="70dp"/>
+                android:layout_marginTop="10dp"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#f9d7db" />
             <EditText
-                android:id="@+id/subject_2"
+                android:id="@+id/marks1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="phone|numberDecimal"
                 android:ems="10"
                 android:drawablePadding="12dp"
                 android:padding="8dp"
-                android:hint="Enter your EmaiID"
+                android:hint="Marks"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <EditText
+            android:id="@+id/subject_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:editable="false"
+            android:ems="10"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:hint=""
+            android:textColorHint="#fff"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="4dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <EditText
+                android:id="@+id/marks2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone|numberDecimal"
+
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Marks"
                 android:textColorHint="#fff"
                 android:maxLines="1"
                 android:background="@android:color/transparent"
@@ -66,11 +103,12 @@
                 android:id="@+id/subject_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="none"
+                android:editable="false"
                 android:ems="10"
                 android:drawablePadding="12dp"
                 android:padding="8dp"
-                android:hint="Enter your EmaiID"
+                android:hint=""
                 android:textColorHint="#fff"
                 android:maxLines="1"
                 android:background="@android:color/transparent"
@@ -82,14 +120,51 @@
                 android:layout_height="1dp"
                 android:background="#f9d7db" />
             <EditText
-                android:id="@+id/subject_4"
+                android:id="@+id/marks3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
+                android:inputType="phone|numberDecimal"
+
                 android:ems="10"
                 android:drawablePadding="12dp"
                 android:padding="8dp"
-                android:hint="Enter your password"
+                android:hint="Marks"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <EditText
+                android:id="@+id/subject_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:editable="false"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint=""
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <EditText
+                android:id="@+id/marks4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone|numberDecimal"
+
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Marks"
                 android:textColorHint="#fff"
                 android:maxLines="1"
                 android:background="@android:color/transparent"
@@ -106,15 +181,33 @@
                 android:id="@+id/subject_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="none"
+                android:editable="false"
                 android:ems="10"
                 android:drawablePadding="12dp"
                 android:padding="8dp"
-                android:hint="Enter your phone number"
+                android:hint=""
                 android:textColorHint="#fff"
                 android:maxLines="1"
                 android:background="@android:color/transparent"
                 android:layout_marginTop="4dp" />
+            <EditText
+                android:id="@+id/marks5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone|numberDecimal"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Marks"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
 
             <Button
                 android:id="@+id/retrieve_data"
