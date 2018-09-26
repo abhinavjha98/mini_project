@@ -4,14 +4,21 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class academics_2 extends MainActivity {
     private Button b1;
     private TextView t1,t2,t3,t4,t5;
+    private TextView m1,m2,m3,m4,m5;
     SQLiteDatabase db;
+    DatabaseReference databaseStudent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +30,16 @@ public class academics_2 extends MainActivity {
         t3=(TextView)findViewById(R.id.subject_3);
         t4=(TextView)findViewById(R.id.subject_4);
         t5=(TextView)findViewById(R.id.subject_5);
-        db = openOrCreateDatabase("Student", Context.MODE_PRIVATE,null);
+
+       databaseStudent = FirebaseDatabase.getInstance().getReference("student");
+
+        m1=(TextView)findViewById(R.id.marks1);
+        m2=(TextView)findViewById(R.id.marks2);
+        m3=(TextView)findViewById(R.id.marks3);
+        m4=(TextView)findViewById(R.id.marks4);
+        m5=(TextView)findViewById(R.id.marks5);
+
+
         Bundle extras = getIntent().getExtras();
         if(extras!=null){
             String m0 = extras.getString("value1");
@@ -40,8 +56,24 @@ public class academics_2 extends MainActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            addData();
             }
         });
+    }
+    private void addData(){
+        String marks1 = m1.getText().toString().trim();
+        String marks2 = m2.getText().toString().trim();
+        String marks3 = m3.getText().toString().trim();
+        String marks4 = m4.getText().toString().trim();
+        String marks5 = m5.getText().toString().trim();
+
+        if(!TextUtils.isEmpty(marks1)){
+       String id= databaseStudent.push().getKey();
+       academics_data academicsData = new academics_data(id,marks1,marks2,marks3,marks4,marks5);
+       databaseStudent.child(id).setValue(academicsData);
+            Toast.makeText(academics_2.this,"Added",Toast.LENGTH_LONG).show();
+        }else{
+            Toast.makeText(academics_2.this,"PLease enter value",Toast.LENGTH_LONG).show();
+        }
     }
 }

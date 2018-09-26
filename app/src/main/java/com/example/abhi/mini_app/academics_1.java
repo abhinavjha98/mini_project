@@ -25,7 +25,7 @@ public class academics_1 extends MainActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.academics_1);
+        setContentView(R.layout.academics_22);
 
         ListView listView = (ListView)findViewById(R.id.listview_add);
         arrayList = new ArrayList<String>();
