@@ -1,6 +1,7 @@
 package com.example.abhi.mini_app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class academics_2 extends MainActivity {
-    private Button b1;
+    private Button b1,b2;
     private TextView t1,t2,t3,t4,t5;
     private TextView m1,m2,m3,m4,m5;
     SQLiteDatabase db;
@@ -38,7 +39,7 @@ public class academics_2 extends MainActivity {
         m3=(TextView)findViewById(R.id.marks3);
         m4=(TextView)findViewById(R.id.marks4);
         m5=(TextView)findViewById(R.id.marks5);
-
+        b2=(Button)findViewById(R.id.datas);
 
         Bundle extras = getIntent().getExtras();
         if(extras!=null){
@@ -57,6 +58,15 @@ public class academics_2 extends MainActivity {
             @Override
             public void onClick(View v) {
             addData();
+
+            }
+        });
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(academics_2.this,academics_3.class);
+                startActivity(i);
             }
         });
     }
@@ -75,5 +85,6 @@ public class academics_2 extends MainActivity {
         }else{
             Toast.makeText(academics_2.this,"PLease enter value",Toast.LENGTH_LONG).show();
         }
+
     }
 }

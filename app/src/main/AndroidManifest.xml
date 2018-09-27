@@ -23,6 +23,7 @@
         <activity android:name=".Register"></activity>
         <activity android:name=".academics_1"></activity>
         <activity android:name=".academics_2"></activity>
+        <activity android:name=".academics_3"></activity>
         <activity android:name=".Home_screen"></activity>
         <activity android:name=".academics"></activity>
         <activity android:name=".health"></activity>
