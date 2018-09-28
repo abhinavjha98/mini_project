@@ -29,17 +29,12 @@ public class academics_3 extends MainActivity {
         e4=(EditText)findViewById(R.id.rt4);
         e5=(EditText)findViewById(R.id.rt5);
         database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference("https://fir-intro-45ba0.firebaseio.com/");
-        reference.addValueEventListener(new ValueEventListener() {
+        DatabaseReference re = FirebaseDatabase.getInstance().getReference();
+        re.child("student").child("ms1").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                Map<String,String> map =dataSnapshot.getValue(Map.class);
-                String marks1 =map.get("ms1");
-                String marks2 =map.get("ms2");
-
-                e1.setText(marks1);
-                e2.setText(marks2);
+                academics_data ad =dataSnapshot.getValue(academics_data.class);
+                displ
             }
 
             @Override
@@ -47,5 +42,30 @@ public class academics_3 extends MainActivity {
 
             }
         });
+
+//        DatabaseReference reference = database.getReference("https://fir-intro-45ba0.firebaseio.com/");
+//        re.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//
+////                for(DataSnapshot post:dataSnapshot.getChildren()){
+////                    academics_data a =post.getValue(academics_data.class);
+////                    String ab = a.getMs1().toString();
+////                    e1.setText(""+ab);
+////                }
+//
+//                Map<String,String> map =dataSnapshot.getValue(Map.class);
+//                String marks1 =map.get("ms1");
+//                String marks2 =map.get("ms2");
+//
+//                e1.setText(marks1);
+//                e2.setText(marks2);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
     }
 }
