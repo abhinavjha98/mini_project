@@ -12,6 +12,11 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="119dp"
         android:text="Button" />
+    <ListView
+        android:id="@+id/listview_adds"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        />
 
     <EditText
         android:id="@+id/rt1"

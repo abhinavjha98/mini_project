@@ -43,7 +43,7 @@ public class Home_screen extends MainActivity{
         st.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Home_screen.this,stress.class);
+                Intent i = new Intent(Home_screen.this, stress.class);
                 startActivity(i);
             }
         });

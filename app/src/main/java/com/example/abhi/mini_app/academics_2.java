@@ -78,7 +78,8 @@ public class academics_2 extends MainActivity {
         String marks5 = m5.getText().toString().trim();
 
         if(!TextUtils.isEmpty(marks1)){
-       String id= databaseStudent.push().getKey();
+      //String id= databaseStudent.push().getKey();
+            String id = "1";
        academics_data academicsData = new academics_data(id,marks1,marks2,marks3,marks4,marks5);
        databaseStudent.child(id).setValue(academicsData);
             Toast.makeText(academics_2.this,"Added",Toast.LENGTH_LONG).show();

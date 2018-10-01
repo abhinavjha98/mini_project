@@ -32,6 +32,7 @@
         <activity android:name=".Graph"></activity>
         <activity android:name=".health_camera"></activity>
         <activity android:name=".health_cam"></activity>
+
         <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocs"/>
     </application>
