@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.CAMERA">
 
     </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,9 +33,26 @@
         <activity android:name=".Graph"></activity>
         <activity android:name=".health_camera"></activity>
         <activity android:name=".health_cam"></activity>
-
+        <activity android:name=".First_Ques_Stress"></activity>
+        <activity android:name=".Second_Ques_Stress"></activity>
+        <activity android:name=".Third_Ques_Stress"></activity>
+        <activity android:name=".Fourth_Ques_Stress"></activity>
+        <activity android:name=".Fifth_Ques_Stress"></activity>
+        <activity android:name=".Sixth_Ques_Stress"></activity>
+        <activity android:name=".Seventh_Ques_Stress"></activity>
+        <activity android:name=".Eight_Ques_Stress"></activity>
+        <activity android:name=".Night_Ques_Stress"></activity>
+        <activity android:name=".Tenth_Ques_Stress"></activity>
+        <activity android:name=".stress_home"></activity>
+        <activity android:name=".stress_low"></activity>
+        <activity android:name=".stress_high"></activity>
+        <activity android:name=".stress_medium"></activity>
         <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocs"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
     </application>
 
 </manifest>
