@@ -30,15 +30,16 @@
                 android:id="@+id/scorestress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:ems="10"
+                android:layout_marginTop="20dp"
                 android:background="@android:color/transparent"
                 android:drawablePadding="12dp"
-                android:padding="8dp"
+                android:ems="10"
                 android:hint="Your score"
-                android:textColorHint="#fff"
+                android:editable="false"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:layout_marginTop="20dp"/>
+                android:padding="8dp"
+                android:textColorHint="#fff" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

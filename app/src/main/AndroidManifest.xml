@@ -47,11 +47,10 @@
         <activity android:name=".stress_low"></activity>
         <activity android:name=".stress_high"></activity>
         <activity android:name=".stress_medium"></activity>
+        <activity android:name=".Graph_Academics_1"></activity>
         <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocs"/>
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+
 
     </application>
 

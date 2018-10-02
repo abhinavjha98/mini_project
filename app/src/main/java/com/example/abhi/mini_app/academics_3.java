@@ -1,5 +1,6 @@
 package com.example.abhi.mini_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.NonNull;
@@ -20,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 public class academics_3 extends MainActivity {
-    private Button fret;
+    private Button fret,next,another;
     private EditText e1,e2,e3,e4,e5;
     private FirebaseDatabase database;
     DatabaseReference root,demo;
@@ -29,8 +30,10 @@ public class academics_3 extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.academics_3);
+        setContentView(R.layout.academics_33);
         fret = (Button)findViewById(R.id.fire_retrieve);
+        next = (Button)findViewById(R.id.graph);
+        another=(Button)findViewById(R.id.another);
         e1=(EditText)findViewById(R.id.rt1);
         e2=(EditText)findViewById(R.id.rt2);
         e3=(EditText)findViewById(R.id.rt3);
@@ -64,8 +67,29 @@ public class academics_3 extends MainActivity {
                 });
             }
         });
+        another.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-
+            }
+        });
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i =new Intent(academics_3.this,Graph_Academics_1.class);
+                int ee1 =Integer.parseInt(String.valueOf(e1.getText()));
+                int ee2 =Integer.parseInt(String.valueOf(e2.getText()));
+                int ee3 =Integer.parseInt(String.valueOf(e3.getText()));
+                int ee4 =Integer.parseInt(String.valueOf(e4.getText()));
+                int ee5 =Integer.parseInt(String.valueOf(e5.getText()));
+                i.putExtra("marks1",ee1);
+                i.putExtra("marks2",ee2);
+                i.putExtra("marks3",ee3);
+                i.putExtra("marks4",ee4);
+                i.putExtra("marks5",ee5);
+                startActivity(i);
+            }
+        });
 
 
 

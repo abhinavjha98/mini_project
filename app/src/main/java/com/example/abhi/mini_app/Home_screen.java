@@ -36,7 +36,7 @@ public class Home_screen extends MainActivity{
         tr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Home_screen.this,tracking.class);
+                Intent i = new Intent(Home_screen.this,Graph.class);
                 startActivity(i);
             }
         });
