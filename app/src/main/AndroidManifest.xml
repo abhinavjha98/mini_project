@@ -48,6 +48,10 @@
         <activity android:name=".stress_high"></activity>
         <activity android:name=".stress_medium"></activity>
         <activity android:name=".Graph_Academics_1"></activity>
+        <activity android:name=".Graph_Academics_2"></activity>
+        <activity android:name=".Graph_Academics_3"></activity>
+        <activity android:name=".Graph_Academics_4"></activity>
+        <activity android:name=".Graph_Academics_5"></activity>
         <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocs"/>
 

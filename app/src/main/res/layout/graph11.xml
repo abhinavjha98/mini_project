@@ -1,47 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="18dp"
-    android:paddingRight="18dp"
     android:background="@drawable/new_login_gradients">
-
-    <ScrollView
+    <com.github.mikephil.charting.charts.LineChart
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:id="@+id/lineChart">
 
-            <!-- Here you can put your logo or brand name -->
+    </com.github.mikephil.charting.charts.LineChart>
 
-
-            <com.github.mikephil.charting.charts.LineChart
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:id="@+id/lineChart1"
-                >
-
-            </com.github.mikephil.charting.charts.LineChart>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <com.github.mikephil.charting.charts.LineChart
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/lineChart2">
-
-            </com.github.mikephil.charting.charts.LineChart>
-            <com.github.mikephil.charting.charts.LineChart
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/lineChart3">
-
-            </com.github.mikephil.charting.charts.LineChart>
-
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</RelativeLayout>

@@ -77,6 +77,11 @@ public class academics_3 extends MainActivity {
             @Override
             public void onClick(View v) {
                 Intent i =new Intent(academics_3.this,Graph_Academics_1.class);
+                Intent i1 =new Intent(academics_3.this,Graph_Academics_2.class);
+                Intent i2 =new Intent(academics_3.this,Graph_Academics_3.class);
+                Intent i3 =new Intent(academics_3.this,Graph_Academics_4.class);
+                Intent i4 =new Intent(academics_3.this,Graph_Academics_5.class);
+               // Intent i5 =new Intent(academics_3.this,Graph_Academics_1.class);
                 int ee1 =Integer.parseInt(String.valueOf(e1.getText()));
                 int ee2 =Integer.parseInt(String.valueOf(e2.getText()));
                 int ee3 =Integer.parseInt(String.valueOf(e3.getText()));
@@ -87,6 +92,18 @@ public class academics_3 extends MainActivity {
                 i.putExtra("marks3",ee3);
                 i.putExtra("marks4",ee4);
                 i.putExtra("marks5",ee5);
+
+                i1.putExtra("marks1",ee1);
+                i1.putExtra("marks2",ee2);
+                i1.putExtra("marks3",ee3);
+                i1.putExtra("marks4",ee4);
+                i1.putExtra("marks5",ee5);
+
+                i2.putExtra("marks1",ee1);
+                i2.putExtra("marks2",ee2);
+                i2.putExtra("marks3",ee3);
+                i2.putExtra("marks4",ee4);
+                i2.putExtra("marks5",ee5);
                 startActivity(i);
             }
         });
