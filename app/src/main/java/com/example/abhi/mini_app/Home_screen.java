@@ -6,12 +6,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Home_screen extends MainActivity{
     private ImageView ac,tr,st,he;
     private DrawerLayout dl;
     private ActionBarDrawerToggle at;
+    private TextView e111;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +29,7 @@ public class Home_screen extends MainActivity{
         tr =(ImageView)findViewById(R.id.tracking);
         st =(ImageView)findViewById(R.id.stress);
         he =(ImageView)findViewById(R.id.health);
+        e111 = (TextView) findViewById(R.id.finals);
 
         ac.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,22 +41,29 @@ public class Home_screen extends MainActivity{
         tr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Home_screen.this,Graph.class);
-                startActivity(i);
+                Intent i2 = new Intent(Home_screen.this,Main2Activity.class);
+                startActivity(i2);
             }
         });
         st.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Home_screen.this, stress_home.class);
-                startActivity(i);
+                Intent i3 = new Intent(Home_screen.this, stress_home.class);
+                startActivity(i3);
             }
         });
         he.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Home_screen.this,health_cam.class);
-                startActivity(i);
+                Intent i4 = new Intent(Home_screen.this,health_1.class);
+                startActivity(i4);
+            }
+        });
+        e111.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i5 = new Intent(Home_screen.this,final_analysis_1.class);
+                startActivity(i5);
             }
         });
     }
@@ -59,7 +71,11 @@ public class Home_screen extends MainActivity{
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(at.onOptionsItemSelected(item)){
-            return true;
+            if(item.getItemId()==R.id.db){
+                Intent i = new Intent(Home_screen.this,academics_1.class);
+                startActivity(i);
+                return true;
+            }
         }
         return super.onOptionsItemSelected(item);
     }

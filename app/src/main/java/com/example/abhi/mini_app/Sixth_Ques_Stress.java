@@ -23,6 +23,7 @@ public class Sixth_Ques_Stress extends MainActivity {
             public void onClick(View view) {
                 final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogroup);
                 int selectedId = radioGroup.getCheckedRadioButtonId();
+                if(selectedId==R.id.radioButton2 ||selectedId==R.id.radioButton3 ||selectedId==R.id.radioButton4){
                 switch (selectedId)
                 {
                     case R.id.radioButton2:
@@ -34,6 +35,10 @@ public class Sixth_Ques_Stress extends MainActivity {
                     case R.id.radioButton4:
                         value1=30;
                         break;
+                    default:value1=10;
+                }
+                }else {
+                    value1=10;
                 }
                 value2= value1+value;
                    Intent i2=new Intent(Sixth_Ques_Stress.this,Seventh_Ques_Stress.class);

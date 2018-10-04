@@ -87,7 +87,7 @@ public class Graph_Academics_4 extends MainActivity{
 //        yvalues.add(new Entry(3,20f));
 //        yvalues.add(new Entry(4,90f));
 //        yvalues.add(new Entry(5,10f));
-                LineDataSet set1=new LineDataSet(yvalues,"Marks1");
+                LineDataSet set1=new LineDataSet(yvalues,"Subject4");
                 set1.setFillAlpha(110);
                 set1.setColor(Color.BLUE);
                 set1.setLineWidth(3f);

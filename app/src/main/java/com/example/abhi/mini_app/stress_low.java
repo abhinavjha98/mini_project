@@ -2,6 +2,7 @@ package com.example.abhi.mini_app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -19,5 +20,12 @@ public class stress_low extends MainActivity {
         e1 = (EditText)findViewById(R.id.scorestressedit);
         e2 =(EditText)findViewById(R.id.scorestress);
         e1.setText(""+value);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(stress_low.this,Home_screen.class);
+                startActivity(i);
+            }
+        });
     }
 }

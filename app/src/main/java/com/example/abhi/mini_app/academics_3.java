@@ -70,7 +70,8 @@ public class academics_3 extends MainActivity {
         another.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(academics_3.this,academics_1.class);
+                startActivity(i);
             }
         });
         next.setOnClickListener(new View.OnClickListener() {

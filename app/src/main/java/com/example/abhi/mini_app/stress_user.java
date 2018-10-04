@@ -8,4 +8,11 @@ public class stress_user {
         this.values1=values1;
     }
 
+    public int getValues1() {
+        return values1;
+    }
+
+    public void setValues1(int values1) {
+        this.values1 = values1;
+    }
 }

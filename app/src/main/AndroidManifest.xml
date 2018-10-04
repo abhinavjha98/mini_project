@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.abhi.mini_app">
-<uses-permission android:name="android.permission.INTERNET">
-</uses-permission>
-    <uses-permission android:name="android.permission.CAMERA">
 
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,41 +20,64 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register"></activity>
-        <activity android:name=".academics_1"></activity>
-        <activity android:name=".academics_2"></activity>
-        <activity android:name=".academics_3"></activity>
-        <activity android:name=".Home_screen"></activity>
-        <activity android:name=".academics"></activity>
-        <activity android:name=".health"></activity>
-        <activity android:name=".stress"></activity>
-        <activity android:name=".tracking"></activity>
-        <activity android:name=".Graph"></activity>
-        <activity android:name=".health_camera"></activity>
-        <activity android:name=".health_cam"></activity>
-        <activity android:name=".First_Ques_Stress"></activity>
-        <activity android:name=".Second_Ques_Stress"></activity>
-        <activity android:name=".Third_Ques_Stress"></activity>
-        <activity android:name=".Fourth_Ques_Stress"></activity>
-        <activity android:name=".Fifth_Ques_Stress"></activity>
-        <activity android:name=".Sixth_Ques_Stress"></activity>
-        <activity android:name=".Seventh_Ques_Stress"></activity>
-        <activity android:name=".Eight_Ques_Stress"></activity>
-        <activity android:name=".Night_Ques_Stress"></activity>
-        <activity android:name=".Tenth_Ques_Stress"></activity>
-        <activity android:name=".stress_home"></activity>
-        <activity android:name=".stress_low"></activity>
-        <activity android:name=".stress_high"></activity>
-        <activity android:name=".stress_medium"></activity>
-        <activity android:name=".Graph_Academics_1"></activity>
-        <activity android:name=".Graph_Academics_2"></activity>
-        <activity android:name=".Graph_Academics_3"></activity>
-        <activity android:name=".Graph_Academics_4"></activity>
-        <activity android:name=".Graph_Academics_5"></activity>
-        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="ocs"/>
+        <activity android:name=".Register" />
+        <activity android:name=".academics_1" />
+        <activity android:name=".academics_2" />
+        <activity android:name=".academics_3" />
+        <activity android:name=".Home_screen" />
+        <activity android:name=".academics" />
+        <activity android:name=".health" />
+        <activity android:name=".stress" />
+        <activity android:name=".tracking" />
+        <activity android:name=".Graph" />
+        <activity android:name=".health_camera" />
+        <activity android:name=".health_cam" />
+        <activity android:name=".First_Ques_Stress" />
+        <activity android:name=".Second_Ques_Stress" />
+        <activity android:name=".Third_Ques_Stress" />
+        <activity android:name=".Fourth_Ques_Stress" />
+        <activity android:name=".Fifth_Ques_Stress" />
+        <activity android:name=".Sixth_Ques_Stress" />
+        <activity android:name=".Seventh_Ques_Stress" />
+        <activity android:name=".Eight_Ques_Stress" />
+        <activity android:name=".Night_Ques_Stress" />
+        <activity android:name=".Tenth_Ques_Stress" />
+        <activity android:name=".stress_home" />
+        <activity android:name=".stress_low" />
+        <activity android:name=".stress_high" />
+        <activity android:name=".stress_medium" />
+        <activity android:name=".Graph_Academics_1" />
+        <activity android:name=".Graph_Academics_2" />
+        <activity android:name=".Graph_Academics_3" />
+        <activity android:name=".Graph_Academics_4" />
+        <activity android:name=".Graph_Academics_5" />
+        <activity android:name=".final_analysis_1" />
+        <activity android:name=".health_1"></activity>
+        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".final_happy"></activity>
+        <activity android:name=".final_medium"></activity>
+        <activity android:name=".final_sad"></activity>
 
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocs" />
 
+        <activity android:name=".Main2Activity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>

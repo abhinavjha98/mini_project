@@ -42,6 +42,7 @@ public class academics_1 extends MainActivity {
                 arrayList.add(newItem);
 
                 adapter.notifyDataSetChanged();
+                txtinput.setText("");
             }
         });
         next = (Button)findViewById(R.id.next);

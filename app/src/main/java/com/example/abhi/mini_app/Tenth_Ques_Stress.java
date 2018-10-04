@@ -28,17 +28,22 @@ public class Tenth_Ques_Stress extends MainActivity {
             public void onClick(View view) {
                 final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogroup);
                 int selectedId = radioGroup.getCheckedRadioButtonId();
-                switch (selectedId) {
-                    case R.id.radioButton2:
-                        value1 = 10;
-                        break;
-                    case R.id.radioButton3:
-                        value1 = 20;
-                        break;
-                    case R.id.radioButton4:
-                        value1 = 30;
-                        break;
+                if(selectedId==R.id.radioButton2 ||selectedId==R.id.radioButton3 ||selectedId==R.id.radioButton4) {
+                    switch (selectedId) {
+                        case R.id.radioButton2:
+                            value1 = 10;
+                            break;
+                        case R.id.radioButton3:
+                            value1 = 20;
+                            break;
+                        case R.id.radioButton4:
+                            value1 = 30;
+                            break;
+                    }
                 }
+                else{
+                        value1=10;
+                    }
                 value2 = value1 + value;
                 if (value2 < 160) {
                     Intent i = new Intent(Tenth_Ques_Stress.this, stress_low.class);

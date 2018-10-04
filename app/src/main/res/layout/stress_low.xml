@@ -36,7 +36,7 @@
                 android:ems="10"
                 android:hint="Your score"
                 android:editable="false"
-                android:inputType="textEmailAddress"
+                android:inputType="none"
                 android:maxLines="1"
                 android:padding="8dp"
                 android:textColorHint="#fff" />
@@ -48,7 +48,8 @@
                 android:id="@+id/scorestressedit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+                android:inputType="none"
+                android:editable="false"
                 android:ems="10"
                 android:background="@android:color/transparent"
                 android:drawablePadding="12dp"
