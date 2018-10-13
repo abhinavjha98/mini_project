@@ -34,6 +34,7 @@ public class Graph_Academics_2 extends MainActivity{
     private LineChart mchart3;
     private float m1,me2,me3,me4,me5,me6;
     private float avg1,avg2;
+    private String subs2;
     DatabaseReference databaseStudent;
     DatabaseReference root,demo;
     academics_data ad;
@@ -57,7 +58,21 @@ public class Graph_Academics_2 extends MainActivity{
 
                 }
                 m1 = Float.parseFloat(ad.getMs2());
+        demo.child("subject").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Iterable<DataSnapshot> children = dataSnapshot.getChildren();
+                for (DataSnapshot child : children) {
+                    ad = child.getValue(academics_data.class);
 
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
                 mChart.setScaleEnabled(true);
 
                 LimitLine upper_limit = new LimitLine(50f,"Danger");

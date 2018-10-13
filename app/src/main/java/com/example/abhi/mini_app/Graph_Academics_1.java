@@ -28,6 +28,7 @@ public class Graph_Academics_1 extends MainActivity{
     private float m1,me2,me3,me4,me5,me6;
     private float n1,n2,n3,n4,n5;
     private float avg1,avg2;
+    private String subject1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
