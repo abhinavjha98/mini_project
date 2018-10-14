@@ -58,21 +58,6 @@ public class Graph_Academics_2 extends MainActivity{
 
                 }
                 m1 = Float.parseFloat(ad.getMs2());
-        demo.child("subject").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Iterable<DataSnapshot> children = dataSnapshot.getChildren();
-                for (DataSnapshot child : children) {
-                    ad = child.getValue(academics_data.class);
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
                 mChart.setScaleEnabled(true);
 
                 LimitLine upper_limit = new LimitLine(50f,"Danger");

@@ -26,6 +26,8 @@ public class academics_3 extends MainActivity {
     private FirebaseDatabase database;
     DatabaseReference root,demo;
     academics_data ad;
+    subject_store st;
+    String ss1,ss2,ss3,ss4,ss5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,27 @@ public class academics_3 extends MainActivity {
         e4=(EditText)findViewById(R.id.rt4);
         e5=(EditText)findViewById(R.id.rt5);
         final List<academics_data> specimens = new ArrayList<academics_data>();
+        demo = FirebaseDatabase.getInstance().getReference();
+        demo.child("subject").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Iterable<DataSnapshot> children = dataSnapshot.getChildren();
+                for (DataSnapshot child : children) {
+                    st = child.getValue(subject_store.class);
+
+                }
+                ss1 = st.getSs1();
+                ss2 = st.getSs2();
+                ss3 = st.getSs3();
+                ss4 = st.getSs4();
+                ss5 = st.getSs5();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
         root =FirebaseDatabase.getInstance().getReference();
      //   String abc = e5.getText().toString().trim();
         fret.setOnClickListener(new View.OnClickListener() {
@@ -53,11 +76,11 @@ public class academics_3 extends MainActivity {
                             ad = child.getValue(academics_data.class);
 
                         }
-                        e1.setText(""+ad.ms1);
-                        e2.setText(""+ad.ms2);
-                        e3.setText(""+ad.ms3);
-                        e4.setText(""+ad.ms4);
-                        e5.setText(""+ad.ms5);
+                        e1.setText(ss1+" marks is "+ad.ms1);
+                        e2.setText(ss2+" marks is "+ad.ms2);
+                        e3.setText(ss3+" marks is "+ad.ms3);
+                        e4.setText(ss4+" marks is "+ad.ms4);
+                        e5.setText(ss5+" marks is "+ad.ms5);
                     }
 
                     @Override
@@ -83,11 +106,11 @@ public class academics_3 extends MainActivity {
                 Intent i3 =new Intent(academics_3.this,Graph_Academics_4.class);
                 Intent i4 =new Intent(academics_3.this,Graph_Academics_5.class);
                // Intent i5 =new Intent(academics_3.this,Graph_Academics_1.class);
-                int ee1 =Integer.parseInt(String.valueOf(e1.getText()));
-                int ee2 =Integer.parseInt(String.valueOf(e2.getText()));
-                int ee3 =Integer.parseInt(String.valueOf(e3.getText()));
-                int ee4 =Integer.parseInt(String.valueOf(e4.getText()));
-                int ee5 =Integer.parseInt(String.valueOf(e5.getText()));
+                int ee1 =Integer.parseInt(ad.getMs1());
+                int ee2 =Integer.parseInt(ad.getMs2());
+                int ee3 =Integer.parseInt(ad.getMs3());
+                int ee4 =Integer.parseInt(ad.getMs4());
+                int ee5 =Integer.parseInt(ad.getMs5());
                 i.putExtra("marks1",ee1);
                 i.putExtra("marks2",ee2);
                 i.putExtra("marks3",ee3);
