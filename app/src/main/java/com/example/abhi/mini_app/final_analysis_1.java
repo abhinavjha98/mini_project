@@ -132,7 +132,40 @@ public class final_analysis_1 extends MainActivity {
                    // Toast.makeText(final_analysis_1.this,""+avg,Toast.LENGTH_LONG).show();
                     Intent i3 = new Intent(final_analysis_1.this,final_sad.class);
                     startActivity(i3);
-                }else{
+                }
+                else if(mar1 < 45 && mar2 <45 && mar3 <45 && mar4 < 45 && mar5 < 45){
+                    score = 8;
+                    if (stres > 100 && stres < 160) {
+                        stres = 10;
+                    } else if (stres > 170 && stres < 240) {
+                        stres = 6;
+                    } else {
+                        stres = 2;
+                    }
+                    track = 5;
+                    health = 5;
+                    // avg = score;
+                    // Toast.makeText(final_analysis_1.this,""+avg,Toast.LENGTH_LONG).show();
+                    Intent i3 = new Intent(final_analysis_1.this,final_sad.class);
+                    startActivity(i3);
+                }
+                else if(mar1 < 45 && mar2 > 75 && mar3 <45 && mar2 < 75 && mar4 < 45){
+                    score = 8;
+                    if (stres > 100 && stres < 160) {
+                        stres = 10;
+                    } else if (stres > 170 && stres < 240) {
+                        stres = 6;
+                    } else {
+                        stres = 2;
+                    }
+                    track = 5;
+                    health = 5;
+                    // avg = score;
+                    // Toast.makeText(final_analysis_1.this,""+avg,Toast.LENGTH_LONG).show();
+                    Intent i3 = new Intent(final_analysis_1.this,final_medium.class);
+                    startActivity(i3);
+                }
+                else{
                     Toast.makeText(final_analysis_1.this,"Please enter proper details",Toast.LENGTH_LONG).show();
                 }
             }
