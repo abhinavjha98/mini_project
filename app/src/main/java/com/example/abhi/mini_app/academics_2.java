@@ -1,8 +1,6 @@
 package com.example.abhi.mini_app;
 
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -24,7 +22,7 @@ public class academics_2 extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sample);
+        setContentView(R.layout.academics_2_sample);
         b1=(Button)findViewById(R.id.retrieve_data);
         t1=(TextView)findViewById(R.id.subject_1);
         t2=(TextView)findViewById(R.id.subject_2);

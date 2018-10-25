@@ -1,6 +1,5 @@
 package com.example.abhi.mini_app;
 
-import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -30,7 +29,7 @@ public class academics_1 extends MainActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.academics_22);
+        setContentView(R.layout.academics_1);
 
         databaseSubject = FirebaseDatabase.getInstance().getReference("subject");
         ListView listView = (ListView)findViewById(R.id.listview_add);

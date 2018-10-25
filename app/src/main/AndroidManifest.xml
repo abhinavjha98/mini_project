@@ -25,7 +25,6 @@
         <activity android:name=".academics_2" />
         <activity android:name=".academics_3" />
         <activity android:name=".Home_screen" />
-        <activity android:name=".academics" />
         <activity android:name=".health" />
         <activity android:name=".stress" />
         <activity android:name=".tracking" />
