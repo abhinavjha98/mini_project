@@ -1,5 +1,7 @@
 Mini project 
+
 Topic : Prective Student Analysis
+
 Introduction:
 This application predicts the overall performance of the students based on four parameters. They are as follows:=
   Academics: In this module, the registered student will first enter the subjects of his current year then he/she has to enter the marks of the tests conducted simultaneously so has create the performance graph of each subject .
